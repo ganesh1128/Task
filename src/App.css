@@ -1,5 +1,12 @@
 .App {
   text-align: center;
+
+}
+.mobile-grid{
+  display: none;
+}
+.mainMobileDiv{
+  display: none;
 }
 
 .App-logo {
@@ -12,7 +19,7 @@
   align-items: flex-start; */
 
   display: grid;
-  grid-template-columns: 1150px 100px;
+  grid-template-columns: 1325px 110px;
 }
 .iconsDiv{
   display: grid;
@@ -21,6 +28,10 @@
   top: 13px;
   left: 6px;
 
+}
+.likeDiv{
+  position: relative;
+    bottom: 180px;
 }
 .smallImageDiv{
   position: relative;
@@ -125,4 +136,159 @@
   /* background-color: #2196F3; */
 }
 
+@media screen and (max-width: 800px) {
+  .grid-container, .mainTabs{
+    display: none;
+  }
+  .mainMobileDiv{
+    display: block;
+  }
+  .mobile-grid{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+  }
+  .ant-carousel .slick-dots li button {
+    display: block;
+    width: 100%;
+    height: 3px;
+    padding: 0;
+    color: transparent;
+    font-size: 0;
+    background: #000 !important;
+    border: 0;
+    border-radius: 1px;
+    outline: none;
+    cursor: pointer;
+    opacity: 0.3;
+    transition: all 0.5s;
+}
+.caroselDiv{
+  margin-top: 10px;
+}
+.conentData{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+}
+.conentDataName{
+  font-size: large;
+  font-weight: 600;
+}
+.conentDataDes{
+ font-size: small;
+  font-weight: 500;
+}
+.conentDataPrice{
+  font-size: small;
+  font-weight: 600;
+}
+.colorDiv{
+  text-align: left;
+  margin-top: 10px;
+}
+.MobSizeGudieDiv{
+  display: flex;
+  justify-content: space-between;
+  font-weight: 500;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+
+.MsizeDivXL{
+  width: 60px;
+  margin-right:2px;
+  border-radius: 100px;
+  border: 1px solid lightgray;
+  height: 26px;
+  background: none;
+  position: relative;
+    /* left: -87px; */
+    /* top: 5px; */
+    cursor: pointer;
+}
+.MsizeDivL{
+  width: 60px;
+  cursor: pointer;
+  margin-right:2px ;
+  border-radius: 100px;
+  border: 1px solid lightgray;
+  height: 26px;
+  background: black;
+  color: white;
+  
+
+}
+.MsizeDivM{
+  width: 60px;
+  margin-right:2px;
+  border-radius: 100px;
+  border: 1px solid lightgray;
+  height: 26px;
+  background: none;
+  color: grey;
+  cursor: pointer;
+  background: linear-gradient(to top right , #fff calc(48% - 0.5px), grey , #fff calc(48% + 0.5px) )
+}
+.MsizeDiv{
+  width: 60px;
+  margin-right:2px;
+  border-radius: 100px;
+  border: 1px solid lightgray;
+  height: 26px;
+  background: none;
+  cursor: pointer;
+}
+
+.Maddtobag{
+  width: 250px;
+  height: 48px;
+  border-radius: 100px;
+  background-color: black;
+  color: white;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.MdescDiv{
+  margin-top: 20px;
+  text-align: left;
+  font-size: small;
+}
+.MdescDiv1{
+  margin-top: 10px;
+  text-align: left;
+  font-size: small;
+}
+.MdetailsDev{
+  margin: 30px;
+  text-align: left;
+  margin-left: 0px;
+}
+.blazers{
+  margin-right: 20px;
+    margin-left: 20px;
+}
+.MobdescDiv{
+  padding-bottom: 70px;
+}
+.MsmallImageDiv{
+  position: relative;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  left: -137px;
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+
+}
+.MlikeDiv{
+  position: relative;
+  left: 130px;
+  top: 22px;
+}
+
+}
 

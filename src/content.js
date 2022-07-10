@@ -1,9 +1,10 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
-import { Tab } from '@mui/material';
+import { IconButton, Tab } from '@mui/material';
 import TabContext from '@mui/lab/TabContext';
 import TabList from '@mui/lab/TabList';
 import TabPanel from '@mui/lab/TabPanel';
+import FavoriteBorder from '@mui/icons-material/FavoriteBorder';
 import image409 from './image409.png'
 import image410 from './image410.png'
 import image411 from './image411.png'
@@ -11,16 +12,25 @@ import image412 from './image412.png'
 import image413 from './image413.png'
 import image415 from './image415.png'
 import image414 from './image414.png'
+import { red } from '@mui/material/colors';
 
 
 
 function Content() {
     const [value, setValue] = React.useState('1');
+  
+
+   const colorChange = (event) => {
+      // accessible
+      event.target.style.color = "red"
+      
+   }
+
     const handleChange = (event, newValue) => {
       setValue(newValue);
     };
     const click = () => {
-        console.log("button clicked")
+        alert("added to bag")
     }
   return (
     <div className='grid-container'>
@@ -60,6 +70,9 @@ function Content() {
 
    <div className='images'>
    <img src={image409}width="300px" alt="" />
+   <IconButton variant="plain" className='likeDiv' onClick={colorChange}>
+  <FavoriteBorder />
+</IconButton>
     </div>
     <div className='images'>
     <img src={image410} width="150px" alt="" />
