@@ -34,13 +34,13 @@ const CarouselRatio = () => (
 
   <div className='mainMobileDiv'>
 <div>
-<Carousel className='caroselDiv' >
+<Carousel className='caroselDiv' autoplay >
     <div>
     <IconButton variant="plain" className='MlikeDiv' onClick={colorChange}>
        <FavoriteBorder />
        </IconButton>
       <div style={contentStyle}>
-      <img src={image409}width="350px" height="450px" alt="" ></img>>
+      <img src={image409}width="350px" height="450px" alt="" ></img>
       
       </div>
     </div>

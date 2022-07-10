@@ -12,7 +12,7 @@ import image412 from './image412.png'
 import image413 from './image413.png'
 import image415 from './image415.png'
 import image414 from './image414.png'
-import { red } from '@mui/material/colors';
+
 
 
 
