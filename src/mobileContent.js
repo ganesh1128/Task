@@ -9,6 +9,7 @@ import image414 from './image414.png'
 import image415 from './image415.png'
 import { IconButton } from '@mui/material';
 import FavoriteBorder from '@mui/icons-material/FavoriteBorder';
+import MobButtons from './mobButtons';
 
 
 
@@ -77,11 +78,12 @@ const CarouselRatio = () => (
     <p>SIZE GUIDE</p>
    </span>
    <div >
-   <button className='MsizeDiv'>XS</button>
+    <MobButtons></MobButtons>
+   {/* <button className='MsizeDiv'>XS</button>
    <button className='MsizeDiv'>S</button>
    <button className='MsizeDivM'>M</button>
    <button className='MsizeDivL'>L</button>
-   <button className='MsizeDivXL'>XL</button>
+   <button className='MsizeDivXL'>XL</button> */}
    </div>
    <div>
    <button onClick={click} className='Maddtobag'>ADD TO BAG</button>
