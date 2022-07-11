@@ -18,6 +18,7 @@ import image414 from './image414.png'
 
 function Content() {
     const [value, setValue] = React.useState('1');
+    const [active, setActive] = React.useState("");
   
 
    const colorChange = (event) => {
@@ -32,6 +33,13 @@ function Content() {
     const click = () => {
         alert("added to bag")
     }
+
+    const handleClick = (event) => {
+      setActive(event.target.id);
+      
+      
+    }
+
   return (
     <div className='grid-container'>
     
@@ -103,11 +111,44 @@ function Content() {
     <p>SIZE GUIDE</p>
    </span>
    <div >
-   <button className='sizeDiv'>XS</button>
-   <button className='sizeDiv'>S</button>
-   <button className='sizeDivM'>M</button>
-   <button className='sizeDivL'>L</button>
-   <button className='sizeDivXL'>XL</button>
+   <button 
+  //  className='sizeDiv'  
+   onClick={handleClick}
+   key={1}
+   className={active === "1" ? "active" : "sizeDiv"}
+   id={"1"}
+   >XS
+   </button>
+   <button 
+  //  className='sizeDiv'  
+   onClick={handleClick}
+   key={2}
+   className={active === "2" ? "active" : "sizeDiv"}
+   id={"2"}
+   >
+    S
+    </button>
+   <button 
+  //  className='sizeDivM'  
+  //  onClick={handleClick}
+   key={3}
+   className={active === "3" ? "active" : "sizeDivM"}
+   id={"3"}
+   >M</button>
+   <button 
+  //  className='sizeDivL'
+   onClick={handleClick}
+   key={4}
+   className={active === "4" ? "active" : "sizeDivL"}
+   id={"4"}
+   >L</button>
+   <button 
+  //  className='sizeDivXL'
+   onClick={handleClick}
+   key={5}
+   className={active === "5" ? "activeXL" : "sizeDivXL"}
+   id={"5"}
+   >XL</button>
    </div>
 
    <div>

@@ -40,7 +40,7 @@ export default function LongMenu() {
   return (
     <div className='mobile-grid'>
 
-<div>
+<div className='headingDiv'>
     <span>MY COMPANY.COM</span>
 </div>
 
