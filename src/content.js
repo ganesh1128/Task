@@ -1,6 +1,6 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
-import { IconButton, Tab } from '@mui/material';
+import {  Tab } from '@mui/material';
 import TabContext from '@mui/lab/TabContext';
 import TabList from '@mui/lab/TabList';
 import TabPanel from '@mui/lab/TabPanel';
@@ -19,6 +19,7 @@ import image414 from './image414.png'
 function Content() {
     const [value, setValue] = React.useState('1');
     const [active, setActive] = React.useState("");
+    const [like, setLike] = React.useState(false);
 
     const [size, setSize] = React.useState("");
     
@@ -33,7 +34,8 @@ function Content() {
 
    const colorChange = (event) => {
       // accessible
-      event.target.style.color = "red"
+      // event.target.style.color = "red"
+      setLike(!like)
       
    }
 
@@ -84,9 +86,13 @@ function Content() {
 
    <div className='images'>
    <img src={image409}width="300px" alt="" />
-   <IconButton variant="plain" className='likeDiv' onClick={colorChange}>
+   <button 
+  //  variant="plain" 
+  //  className='likeDiv' 
+  className={"like-button " + (like ? "liked" : "")}
+   onClick={colorChange}>
   <FavoriteBorder />
-</IconButton>
+</button>
     </div>
     <div className='images'>
     <img src={image410} width="150px" alt="" />

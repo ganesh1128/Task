@@ -53,6 +53,21 @@
   position: relative;
     bottom: 180px;
 }
+.like-button {
+  /* font-size: 1rem; */
+  /* padding: 5px 10px; */
+  color:  #585858;
+  position: relative;
+    bottom: 180px;
+    background-color: transparent;
+    border: none;
+}
+.liked {
+  /* font-weight: bold; */
+  color: red;
+  position: relative;
+  bottom: 180px;
+}
 .smallImageDiv{
   position: relative;
     left: -82px;
@@ -328,6 +343,21 @@
   position: relative;
   left: 130px;
   top: 22px;
+}
+.like-button {
+  /* font-size: 1rem; */
+  /* padding: 5px 10px; */
+  color:  #585858;
+  position: relative;
+    bottom: 180px;
+    background-color: transparent;
+    border: none;
+}
+.liked {
+  /* font-weight: bold; */
+  color: red;
+  position: relative;
+  bottom: 180px;
 }
 
 }
