@@ -73,12 +73,9 @@ const CarouselRatio = () => (
    </span>
 </div>
 
-<span className='MobSizeGudieDiv'>
-    <p>SIZE L</p>
-    <p>SIZE GUIDE</p>
-   </span>
+
    <div >
-    <MobButtons></MobButtons>
+    <MobButtons ></MobButtons>
    {/* <button className='MsizeDiv'>XS</button>
    <button className='MsizeDiv'>S</button>
    <button className='MsizeDivM'>M</button>

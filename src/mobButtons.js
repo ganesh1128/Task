@@ -2,13 +2,28 @@ import React from 'react'
 
 function MobButtons() {
     const [active, setActive] = React.useState("");
+    const [size, setSize] = React.useState("");
+    
     const handleClick = (event) => {
         setActive(event.target.id);
+        setSize(event.target.innerText)
+        // console.log(event);
+        // console.log("current size : ", size);
         
-        
-      }
+    }
+
+
+
+    
   return (
+    <>
+    <span className='MobSizeGudieDiv'>
+    <p>SIZE {size}</p>
+    <p>SIZE GUIDE</p>
+   </span>
     <div style={{display : "flex", justifyContent:"space-around"}}>
+        
+
     <button 
    //  className='sizeDiv'  
     onClick={handleClick}
@@ -48,6 +63,7 @@ function MobButtons() {
     id={"5"}
     >XL</button>
     </div>
+    </>
   )
 }
 

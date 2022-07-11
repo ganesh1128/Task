@@ -19,6 +19,16 @@ import image414 from './image414.png'
 function Content() {
     const [value, setValue] = React.useState('1');
     const [active, setActive] = React.useState("");
+
+    const [size, setSize] = React.useState("");
+    
+    const handleClick = (event) => {
+        setActive(event.target.id);
+        setSize(event.target.innerText)
+        console.log(event);
+        // console.log("current size : ", size);
+        
+    }
   
 
    const colorChange = (event) => {
@@ -34,11 +44,7 @@ function Content() {
         alert("added to bag")
     }
 
-    const handleClick = (event) => {
-      setActive(event.target.id);
-      
-      
-    }
+   
 
   return (
     <div className='grid-container'>
@@ -107,7 +113,7 @@ function Content() {
    </span>
 
    <span className='sizeGudieDiv'>
-    <p>SIZE L</p>
+    <p>SIZE {size}</p>
     <p>SIZE GUIDE</p>
    </span>
    <div >
